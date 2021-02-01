@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(26, 49, 124);
+}
+
+
+nav{
+    background-color: rgb(36, 68, 170);
+    margin-bottom: 25px;
+}
+
+.flex-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.flex-nav h1{
+    color: white;
+    font-size: 3.0em;
+    margin-bottom: 10px;
+
+}
+
+.flex-nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(36, 68, 170);
+    background-color: white;
+    padding: 10px 25px;
+    width: 100px;
+    text-align: center;
+}
+
+
+.flex-nav a:hover{
+    background-color: rgb(26, 49, 124);
+    color: white;
+}
+
+
+/* BUTTONS */
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+button{
+    padding: 10px 25px;    
+}
+
+
+.grid-container{
+    position: relative;
+    max-width: 570px;
+    height: 580px;
+    background-image: url(./img/stickyNote.png);
+    background-color:rgb(240, 215, 102);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(16, minmax(10px, 1fr));
+    grid-template-rows: repeat(16 ,minmax(10px, 1fr));
+    border-radius: 3px;
+}
+
+.top{
+    position: absolute;
+    background-color: rgb(255, 245, 152);
+    left: 0px;
+    top: 0px;
+    
+    width: 100%;
+    border-radius: 3px;
+    height: 68px;
+    z-index: 5;
+}
+
+.item{
+    background-color: rgba(0, 0, 0, 0.534);
+
+}
+
+
+
