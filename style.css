@@ -29,6 +29,15 @@ nav{
 
 }
 
+div{
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 .flex-nav a{
     display: inline-block;
     text-decoration: none;
@@ -37,6 +46,7 @@ nav{
     padding: 10px 25px;
     width: 100px;
     text-align: center;
+    margin: 3px;
 }
 
 
@@ -51,6 +61,7 @@ nav{
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
+    gap: 5px;
 }
 
 button{
@@ -71,6 +82,8 @@ button{
     grid-template-columns: repeat(16, minmax(10px, 1fr));
     grid-template-rows: repeat(16 ,minmax(10px, 1fr));
     border-radius: 3px;
+    box-shadow: 1px 0px 15px 2px rgba(0, 0, 0, 0.527);
+
 }
 
 .top{
@@ -78,11 +91,11 @@ button{
     background-color: rgb(255, 245, 152);
     left: 0px;
     top: 0px;
-    
     width: 100%;
     border-radius: 3px;
-    height: 68px;
+    height: 73px;
     z-index: 5;
+    box-shadow: 1px 0px 15px 2px rgba(0, 0, 0, 0.185);
 }
 
 .item{
@@ -91,4 +104,60 @@ button{
 }
 
 
+
+
+.color-buttons{
+    display:flex;
+    margin-top: 20px;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-buttons button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.color-buttons button:nth-child(1){
+    background-color: black;
+}
+.color-buttons button:nth-child(2){
+    background-color: red;
+}
+.color-buttons button:nth-child(3){
+    background-color: blue;
+}
+.color-buttons button:nth-child(4){
+    background-color:green;
+}
+
+.eraser{
+    margin-top: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eraser button{
+    padding: 10px 95px; 
+    background-color: pink;
+    border-radius: 10px;
+}
+
+
+
+
+@media(max-width: 600px){
+
+    .flex-nav{
+        height: 250px;
+    }
+    .flex-nav h1 {
+        text-align: center;
+        width: 200px;
+    }
+}
 
